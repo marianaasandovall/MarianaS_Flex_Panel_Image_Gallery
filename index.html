@@ -36,8 +36,6 @@
       color: white;
       text-align: center;
       align-items: center;
-      /* Safari transitionend event.propertyName === flex */
-      /* Chrome + FF transitionend event.propertyName === flex-grow */
       transition:
         font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
@@ -51,13 +49,13 @@
       flex-direction: column;
     }
 
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+    .panel1 { background-image:url(https://media.giphy.com/media/11tJVrEzcDleA8/giphy.gif?cid=790b7611oh38pcaf95ba9uock84qcp9epmlvt8scv7hdiix5&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
+    .panel2 { background-image:url(https://media.giphy.com/media/a9UWl87mMWeTrLlmJW/giphy.gif?cid=790b76117ucd6kby58xyc6vy8lkivwnk03o67sgl5iygyj0z&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
+    .panel3 { background-image:url(https://media.giphy.com/media/8UGGp7rQvfhe63HrFq/giphy.gif?cid=790b76111pi61qopjddkjmq0z91hthxbqkc9fhygd05pe17k&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
+    .panel4 { background-image:url(https://media.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=790b76111pi61qopjddkjmq0z91hthxbqkc9fhygd05pe17k&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
+    .panel5 { background-image:url(https://media.giphy.com/media/RGEBbXsZT4v1m/giphy.gif?cid=ecf05e47546qwen72gmonvn00bvstm1fybs4g9177d1d4wig&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
 
-    /* Flex Items */
+    
     .panel > * {
       margin: 0;
       width: 100%;
@@ -124,25 +122,6 @@
       <p>Motion</p>
     </div>
   </div>
-
-  <script>
-    const panels = document.querySelectorAll('.panel');
-
-    function toggleOpen() {
-      console.log('Hello');
-      this.classList.toggle('open');
-    }
-
-    function toggleActive(e) {
-      console.log(e.propertyName);
-      if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
-      }
-    }
-
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-  </script>
-
+<script src="script.js"></script>
 </body>
 </html>
