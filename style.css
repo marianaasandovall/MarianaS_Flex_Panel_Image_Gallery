@@ -1,0 +1,12 @@
+.panel:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
+    cursor: pointer;
+    border: 5px solid #1d3557; 
+  }
+
+  
+  
+
+
+  

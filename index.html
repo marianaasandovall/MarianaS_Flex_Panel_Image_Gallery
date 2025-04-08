@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Flex Panels 💪</title>
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="https://fav.farm/✅" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="hatsune-miku.jpg" />
 </head>
 <body>
   <style>
@@ -16,6 +17,11 @@
       font-weight: 200;
     }
 
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       margin: 0;
     }
@@ -24,14 +30,19 @@
       box-sizing: inherit;
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
     .panels {
       min-height: 100vh;
       overflow: hidden;
       display: flex;
+      
     }
 
     .panel {
-      background: #6B0F9C;
+      background: #4361ee;
       box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
       color: white;
       text-align: center;
@@ -49,11 +60,17 @@
       flex-direction: column;
     }
 
-    .panel1 { background-image:url(https://media.giphy.com/media/11tJVrEzcDleA8/giphy.gif?cid=790b7611oh38pcaf95ba9uock84qcp9epmlvt8scv7hdiix5&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
-    .panel2 { background-image:url(https://media.giphy.com/media/a9UWl87mMWeTrLlmJW/giphy.gif?cid=790b76117ucd6kby58xyc6vy8lkivwnk03o67sgl5iygyj0z&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
-    .panel3 { background-image:url(https://media.giphy.com/media/8UGGp7rQvfhe63HrFq/giphy.gif?cid=790b76111pi61qopjddkjmq0z91hthxbqkc9fhygd05pe17k&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
-    .panel4 { background-image:url(https://media.giphy.com/media/AFdcYElkoNAUE/giphy.gif?cid=790b76111pi61qopjddkjmq0z91hthxbqkc9fhygd05pe17k&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
-    .panel5 { background-image:url(https://media.giphy.com/media/RGEBbXsZT4v1m/giphy.gif?cid=ecf05e47546qwen72gmonvn00bvstm1fybs4g9177d1d4wig&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
+    .panel1 { background-image:url(https://i.pinimg.com/736x/4f/67/eb/4f67eb36e32736b9adaffe127a592e42.jpg); }
+    .panel2 { background-image:url(https://i.pinimg.com/736x/59/78/da/5978da4cde545de3e05b4f5214ce3e95.jpg); }
+    .panel3 { background-image:url(https://i.pinimg.com/736x/a1/1f/fb/a11ffb4953cf2ccfafa6c3ee4afaad40.jpg); }
+    .panel4 { background-image:url(https://i.pinimg.com/736x/4a/82/49/4a8249b597e042fa67b645518aa8ee19.jpg); }
+    .panel5 { background-image:url(https://media1.tenor.com/m/JMWyTk5VL4sAAAAd/miku.gif); }
+
+    .panel6 { background-image:url(https://media.tenor.com/c7M-9Nr_FPgAAAAm/hatsune-miku-hatsune.webp); }
+    .panel7 { background-image:url(https://media.tenor.com/Gis-BDm6Q2oAAAAi/hatsune-miku.gif); }
+    .panel8 { background-image:url(https://media.tenor.com/_Oz0ICrN9xgAAAAi/hatsune-miku.gif); }
+    .panel9 { background-image:url(https://media.tenor.com/jLp3gH4CbzcAAAAm/miku-hatsune-miku.webp); }
+    .panel10 { background-image:url(https://media.giphy.com/media/pnDwA1zLAfbYiySdJo/giphy.gif?cid=ecf05e4753ozd5bfj2gm3y3ejmbh3n2ufadfjopci5kwr3b0&ep=v1_gifs_search&rid=giphy.gif&ct=g); }
 
     
     .panel > * {
@@ -61,7 +78,7 @@
       width: 100%;
       transition: transform 0.5s;
       flex: 1 0 auto;
-      display: flex;
+      display: flex-wrap;
       justify-content: center;
       align-items: center;
     }
@@ -94,33 +111,61 @@
     }
   </style>
 
-
+<div class="wrapper">
   <div class="panels">
     <div class="panel panel1">
-      <p>Hey</p>
-      <p>Let's</p>
-      <p>Dance</p>
+      <p>YOU ARE</p>
+      <p>ONE</p>
+      <p>IF A KIND</p>
     </div>
     <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
+      <p>IT TAKES</p>
+      <p>TWO</p>
+      <p>TO SUCCEED</p>
     </div>
     <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
+      <p>ONLY</p>
+      <p>THREE</p>
+      <p>WORDS: NEVER GIVE UP</p>
     </div>
     <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
+      <p>ARE YOU</p>
+      <p>READY?</p>
+      <p>ALWAYS BE.</p>
     </div>
     <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
+      <p>MIKU</p>
+      <p>MIKU</p>
+      <p>BEAAAAAMM</p>
     </div>
+
+    <div class="container">
+    <div class="panel panel6">
+      <p></p>
+      <p>I'M</p>
+      <p></p>
+    </div>
+    <div class="panel panel7">
+      <p></p>
+      <p>THINKING</p>
+      <p></p>
+    </div>
+    <div class="panel panel8">
+      <p></p>
+      <p>MIKU</p>
+      <p></p>
+    </div>
+    <div class="panel panel9">
+      <p></p>
+      <p>MIKU</p>
+      <p></p>
+    </div>
+    <div class="panel panel10">
+      <p></p>
+      <p>OOEEEOO</p>
+      <p></p>
+    </div>
+  </div>
   </div>
 <script src="script.js"></script>
 </body>
